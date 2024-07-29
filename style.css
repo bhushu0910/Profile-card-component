@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.attribution { 
+    font-size: 15px; 
+    text-align: center;
+    color: #fff; 
+}
+.attribution a {
+     color: hsl(228, 45%, 44%);
+     /* color: hsl(227, 10%, 46%); 
+     color: hsl(229, 23%, 23%); */
+}
+
+body{
+    font-family: Kumbh Sans sans-serif;
+    font-size: 18px; 
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh, -0.1px);
+    background-color: hsl(185, 75%, 39%);
+    overflow: hidden;
+    text-align: center;
+    margin-top: 7rem;
+
+}
+
+img{
+    max-width: 100%;
+    width: 100%;
+}
+
+.bg-top{
+    position: absolute;
+    top: -50%;
+    left: -20% ;
+    z-index: -1;
+}
+
+
+.bg-bottom{
+    position: absolute;
+    bottom: -50%;
+    right: -20%;
+    z-index: -1;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.container{
+    background-color: #fff;
+    width: 100% ;
+    max-width: 500px;
+    border-radius: 0.5rem;
+    
+}
+
+.container article:first-child{
+    position: relative;
+}
+
+.container article:first-child img{
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+
+.container article:first-child div img{
+    border-radius: 50%;
+    width: 5rem;
+    position: absolute;
+    left: 50%;
+    bottom: -2rem;
+    transform: translate(-50%);
+    border: 5px solid white;
+}
+
+.container article:nth-child(2){
+    text-align: center;
+    margin-top: 3rem;
+
+}
+
+.container article:nth-child(2) h1{
+    color: hsl(229, 23%, 23%);
+
+}
+
+.container article:nth-child(2) h1 span{
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+
+}
+
+.container article:nth-child(2) h1 p{
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.container article:last-child{
+    border-top: 1px solid hsl(227, 10%, 46%, 0.2);
+    padding: 2rem;
+}
+
+.container article:last-child ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container article:last-child ul li{
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+
+.container article:last-child ul li span{
+    display: block;
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: 0.015rem;
+    margin-top: 0.3rem;
+}
